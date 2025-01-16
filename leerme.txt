@@ -3,15 +3,27 @@
 comando para instalar Express para manejar el servidor y pg para conectar con posgrest
 npm install express pg
 
+para poder cargar variables de entorno desde un archivo .env
+npm install dotenv
+
+
 Instalacion de nodamon como dependencia de desarrollo para el reinicio automatico
 del servidor durante el desarollo
 npm install nodemon --save-dev
+npm install --save-dev nodemon
+npm install -g nodemon
+
+
 
 y en las dependencias del archivo package.json ponemos una , y "start": "nodemon index.js"
 esto para poder usar el nodemon
 
 userdatabase: postgres
 contraseña: 123456
+
+comando general para instalacion 
+npm install express cors pg dotenv
+
 
 creacion de la base de datos 
 
