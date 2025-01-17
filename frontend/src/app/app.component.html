@@ -1,28 +1,34 @@
-
 <div class="container">
-  <h1 class="mt-4 mb-4">Lista de Usuarios</h1>
-  <div class="table-responsive">
+    <div class="header d-flex justify-content-between align-items-center">
+      <h1 class="mt-4 mb-4">Lista de Usuarios</h1>
+      <img
+        src="https://lerprevencion.co/wp-content/uploads/2023/02/logo-web_Mesa-de-trabajo-1.png"
+        alt="Logo"
+        class="logo"
+      />
+    </div>
+    <div class="table-responsive">
       <table class="table table-bordered">
-          <thead class="table-light">
-              <tr>
-                  <th>Nombre</th>
-                  <th>Correo</th>
-                  <th>Edad</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr *ngFor="let user of users">
-                  <td>
-                      <input type="text" class="form-control" [value]="user.nombre" readonly>
-                  </td>
-                  <td>
-                      <input type="email" class="form-control" [value]="user.correo" readonly>
-                  </td>
-                  <td>
-                      <input type="number" class="form-control" [value]="user.edad" readonly>
-                  </td>
-              </tr>
-          </tbody>
+        <thead class="table-light">
+          <tr>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Edad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>
+              <input type="text" class="form-control" [value]="user.nombre" readonly />
+            </td>
+            <td>
+              <input type="email" class="form-control" [value]="user.correo" readonly />
+            </td>
+            <td>
+              <input type="number" class="form-control" [value]="user.edad" readonly />
+            </td>
+          </tr>
+        </tbody>
       </table>
+    </div>
   </div>
-</div>
